@@ -11,12 +11,12 @@ body{
     align-items: center;
     padding: 20px;
 }
-.col-2 img{
+.col-3 img{
     width: 100%;
     cursor: pointer;
     filter:invert(100%);
 }
-.col-2 img:hover{
+.col-3 img:hover{
     filter: invert(0);
 }
 nav{
@@ -33,7 +33,7 @@ nav ul li{
 }
 a{
     text-decoration: none;
-    color: #bfa467;
+    color: white;
 }
 
 .container{
@@ -63,7 +63,7 @@ a{
     margin: 25px 0;
 }
 .col-2 p{
-    color: black;
+    color: white;
 }
 .btn{
     display: inline-block;
@@ -143,7 +143,7 @@ h4{
     transform: translateY(-5px);
 }
 .offer{
-    background: radial-gradient(#fff,#bfa467);
+    background: radial-gradient(#808080,#808080);
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -197,4 +197,28 @@ small{
     color:#bfa467;
     font-size: 14px;
     padding: 60px 0
+}
+.offer1{
+    background: radial-gradient(red, black);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-6 .offer1-img{
+    padding: px;
+}
+small{
+    color: white;
+}
+.col-7{
+    color: white;
+}
+
+.col-3 h1{
+    color: #bfa467;
+}
+p2{
+    color: white;
+}
+.col-3 h2{
+    color: white;
 }
