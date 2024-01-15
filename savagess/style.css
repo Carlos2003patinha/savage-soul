@@ -66,16 +66,16 @@ a{
     color: white;
 }
 .btn{
-    display: inline-block;
-    background: #271d36;
-    color: #bfa467;
+    display:inline-block;
+    background: #bfa467;
+    color: white;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
     transition:  0.5s;
 }
 .btn:hover{
-    background: #524345;
+    background: black;
 } 
 .header{
     background: radial-gradient(#808080,#808080);
@@ -220,5 +220,41 @@ p2{
     color: white;
 }
 .col-3 h2{
+    color: white;
+}
+
+/*--------redes sociais-------*/
+
+.brands{
+    margin: 30px;
+}
+.footer-col-3{
+    width: 30px;
+}
+.footer-col-3 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.footer-col-3 img:hover{
+    filter: grayscale(0);
+}
+.app-logo{
+margin-top: 20px;
+}
+.app-logoimg{
+    width: 140px;
+}
+
+/*----barra de baixo----*/
+h3{
+    color: white;
+}
+
+p1{
+    color: white;
+}
+
+p{
     color: white;
 }
