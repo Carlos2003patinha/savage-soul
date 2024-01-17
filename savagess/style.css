@@ -389,7 +389,6 @@ th:last-child{
     background: radial-gradient(#bfa467,#808080);
 }
 .form-container{
-    background: #808080;
     width: 300px;
     height: 400px;
     position: relative;
@@ -397,6 +396,80 @@ th:last-child{
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1)
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0; 
+}
+ form .btn:focus{
+    outline: none;
+ }
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----baixo login------*/
+.footer1{
+    background: white;
+    color:#bfa467;
+    font-size: 14px;
+    padding: 60px 0
+}
+h31{
+    color: #bfa467;
+}
+
+p16{
+    color: #bfa467;
+}
+
+p67{
+    color: #bfa467;
 }
 
 

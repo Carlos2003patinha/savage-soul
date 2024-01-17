@@ -38,27 +38,34 @@
     <div class="container">
         <div class="row">
             <div class="col-2">
-                <img src="roupa/logo login.png" width="100%">
+                <img src="roupa/logo login.png" width="200px">
             </div>
             <div class="col-2">
                 <div class="form-container">
                     <div class="form-btn">
-                        <span>Login/</span>
-                        <span>Registar</span>
+                        <span>Login</span>
+                        <span>Registrar</span>
                     </div>
 
                     <form>
                         <input type="text" placeholder="Nome">
-                        <input type="password" placeholder="Palavra Passe">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Esqueci a senha</a>
+                        <input type="password" placeholder="password">
+                        <input type="submit" placeholder="password">
                     </form>
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Palavra Passe">
-                    <button type="submit" class="btn">Registrar</button>
 
-
+                    <form id="Loginform">
+                        <input type="text" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Esqueceu a senha</a>
+                    </form>
+                    
+                    <form id="Regform">
+                        <input type="text" placeholder="Nome">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Registrar</button>
+                     </form>
 
                 </div>
             </div>
@@ -71,13 +78,14 @@
 
 <!------------footer------>
 
-        <div class="footer">
+        <div class="footer1">
             <div class="container">
                 <div class="row">
                     <div class="footer-col-1">
-                        <h3>Baixa o nosso APP</h3>
-                        <p>Para Android e Windows</p>
-                        <p1>*Futuramente para Apple*</p1>
+                        <h31>Baixa o nosso APP</h31>
+                        <p6>Para Android e Windows</p6>
+                        <br>
+                        <p16>*Futuramente para Apple*</p16>
                            <div class="app-logo">
                            </div>
                     </div>
@@ -85,7 +93,7 @@
                         
                 </div>
                     <div class="footer-col-3">
-                        <h3>Redes Socias</h3>
+                        <h31>Redes Socias</h31>
                         <ul>
                             <img src="roupa/youtube.png" width="30px">
                             <img src="roupa/instagram.png" width="25px">
@@ -96,7 +104,7 @@
                  </div>
             </div>
             <hr>
-            <p class="copyright">© 2024 SAVAGE SOUL All Rights Reserved</p>
+            <p67 class="copyright">© 2024 SAVAGE SOUL All Rights Reserved</p67>
         </div>
 
         <!---------menu------>
@@ -117,6 +125,33 @@
                 }
             }
          </script>
+
+<!-----toggle form----->
+     <script>
+
+        var loginform = document.getElementById("Loginform");
+        var RegForm = document.getElementById("RegForm");
+
+            function Registrar(){
+                RegForm.style.transform = "translateX(0px)";
+                loginform.style.transform = "translateX(0px)";
+            }
+
+            function Login(){
+                RegForm.style.transform = "translateX(300px)";
+                loginform.style.transform = "translateX(300px)";
+            }   
+
+
+
+     </script>
+
+
+
+
+
+
+
 
     </body>
 </html>
