@@ -32,8 +32,81 @@
         </div>
         </div>
 
-        </div>
+
+<!--------carrinho itens------>
+
+<div class="small-container cart-page">
+
+    <table>
+            <th>Produtos</th>
+            <th>Quantidades</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="roupa/fumo.png" width="200px">
+                   <div>
+                     <p4>Sweat Exclusiva SAVAGE X GIRL SOUL</p4><br><small1>Preço: 249.99€</small1>
+                     <br>
+                     <a href="">Remover</a>
+                   </div>
+                </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>249.99€</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="roupa/svg_snake_tras-removebg-preview.png" width="200px">
+                   <div>
+                     <p4>Sweat Exclusiva SAVAGE X GIRL SOUL</p4><br><small1>Preço: 139.99€ 1̶9̶9̶.̶9̶9̶€</small1>
+                     <br>
+                     <a href="">Remover</a>
+                   </div>
+                </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>139.99€</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="roupa/teni.png" width="200px">
+                   <div>
+                     <p4>Sweat Exclusiva SAVAGE X GIRL SOUL (branco)</p4><br><small1>Preço: 120€</small1>
+                     <br>
+                     <a href="">Remover</a>
+                   </div>
+                </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>120€</td>
+        </tr>
+    </table>
+    <div class="Preço Total">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>509.98€</td>
+            </tr>
+            <tr>
+                <td>Taxa</td>
+                <td>00.00€</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>509.98€</td>
+            </tr>
+        </table>
     </div>
+
+
+
+
+
+</div>
 
 <!------------footer------>
 
@@ -83,32 +156,6 @@
                 }
             }
          </script>
-
-
-<!-----------produtos galeria------>
-     <script>
-        var ProductImg = document.getElementById("ProductImg");
-        var SmallImg = document.getElementsByClassName("small-img");
-
-         SmallImg[0].onclick = function()
-         {
-            ProductImg.src = SmallImg[0].src;
-         }
-         SmallImg[1].onclick = function()
-         {
-            ProductImg.src = SmallImg[1].src;
-         }
-         SmallImg[2].onclick = function()
-         {
-            ProductImg.src = SmallImg[2].src;     
-         }
-         SmallImg[3].onclick = function()
-         {
-            ProductImg.src = SmallImg[3].src;
-         }
-     </script>
-
-
 
     </body>
 </html>

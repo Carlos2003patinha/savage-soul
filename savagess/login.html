@@ -32,76 +32,42 @@
         </div>
         </div>
 
-        <!------produtos------->
+<!--------login--------->
 
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="roupa/supreme x savage.png" width="100%">
-                </div>
-                <div class="col-2">
-                   <p>Início / Sweat </p>
-                   <h1>SAVAGE X SUPREME</h1>
-                   <h2>300€</h2>
-                   <select>
-                      <option>Select size</option>
-                      <option>S</option>
-                      <option>M</option>
-                      <option>L</option>
-                      <option>XL</option>
-                      <option>XXL</option>
-                   </select>
-                    <input type="number" value="1">
-                    <a href="" class="btn">Adicionar ao carrinho</a>
-                    <h32>Detalhes do Produto:</h32><br><h32>Apenas 150 unidades vão ser fabricadas para venda!</h32>
-                    <br><h32>Disponível apenas em Branco<h32></h32><br><p4>Exclusivo apenas em branco</p4>
-                </div>
-            </div>
-        </div>
-
-
-        <!------titulo-------->
-       <div class="col-">
+<div class="login-page">
+    <div class="container">
         <div class="row">
-            <h2>Outros Produtos</h2> 
-            <h2>Ver mais</h2>
-        </div>
-       </div>
+            <div class="col-2">
+                <img src="roupa/logo login.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span>Login/</span>
+                        <span>Registar</span>
+                    </div>
+
+                    <form>
+                        <input type="text" placeholder="Nome">
+                        <input type="password" placeholder="Palavra Passe">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Esqueci a senha</a>
+                    </form>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Palavra Passe">
+                    <button type="submit" class="btn">Registrar</button>
 
 
 
-
-        <div class="col-4">
-           
-            <div class="row">
-                <div class="col-4">
-                    <img src="roupa/sweat_branca-removebg-preview.png">
-                    <h4>Sweat SAVAGE X TRAPSTAR </h4>
-                    
-                    <p>69.99€  1̶5̶0̶.̶0̶0̶€</p>
-                </div>
-                <div class="col-4">
-                    <img src="roupa/sweat_caveira_traz-removebg-preview.png">
-                    <h4>Sweat SAVAGE X SKULL </h4>
-                    
-                    <p>149.99€</p>
-                </div>
-                <div class="col-4">
-                    <img src="roupa/fumo.png">
-                    <h4>Sweat Exclusiva SAVAGE X GIRL SOUL </h4>
-                    
-                    <p>249.99€</p>
-                </div>
-                <div class="col-4">
-                    <img src="roupa/savage_white_blue_traz-novo.png">
-                    <h4>Sweat SAVAGE BLUE & WHITE</h4>
-                    
-                    <p>79.99€</p>
                 </div>
             </div>
-
         </div>
     </div>
+</div>
+
+
+
 
 <!------------footer------>
 
@@ -151,30 +117,6 @@
                 }
             }
          </script>
-
-
-<!-----------produtos galeria------>
-<script>
-    var ProductImg = document.getElementById("ProductImg");
-    var SmallImg = document.getElementsByClassName("small-img");
-
-     SmallImg[0].onclick = function()
-     {
-        ProductImg.src = SmallImg[0].src;
-     }
-     SmallImg[1].onclick = function()
-     {
-        ProductImg.src = SmallImg[1].src;
-     }
-     SmallImg[2].onclick = function()
-     {
-        ProductImg.src = SmallImg[2].src;     
-     }
-     SmallImg[3].onclick = function()
-     {
-        ProductImg.src = SmallImg[3].src;
-     }
- </script>
 
     </body>
 </html>
