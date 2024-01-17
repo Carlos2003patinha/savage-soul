@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+     <head>
+    
+
+        <meta charset="UTF-8">
+        <title>Produtos SAVAGE SOUL</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+     </head>
+    <body>
+        
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="roupa/savagae soul top2.png" width="250px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="" class="btn"><img src="">Inicio</a></li>
+                    <li><a href="" class="btn"><img src="">Produtos</a></li>
+                    <li><a href="" class="btn"><img src="">NOVIDADES</a></li>
+                    <li><a href="" class="btn"><img src="">Unisexo</a></li>
+                </ul>
+            </nav>
+            <a href="" class="btn"><img src="roupa/search.png" alt=""></a>
+            <a href="" class="btn"><img src="roupa/user.png" alt=""></a>
+            <a href="" class="btn"><img src="roupa/shopping-cart.png" alt=""></a>
+        </div>
+        </div>
+
+        </div>
+    </div>
+
+<!------------footer------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Baixa o nosso APP</h3>
+                        <p>Para Android e Windows</p>
+                        <p1>*Futuramente para Apple*</p1>
+                           <div class="app-logo">
+                           </div>
+                    </div>
+                    <div class="footer-col-2">
+                        
+                </div>
+                    <div class="footer-col-3">
+                        <h3>Redes Socias</h3>
+                        <ul>
+                            <img src="roupa/youtube.png" width="30px">
+                            <img src="roupa/instagram.png" width="25px">
+                            <img src="roupa/twitter.png" width="30px">
+                            <img src="roupa/whatsapp.png" width="30px">
+                            </ul>
+
+                 </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2024 SAVAGE SOUL All Rights Reserved</p>
+        </div>
+
+        <!---------menu------>
+         <script>
+            var MenuItens = document.getElementById("MenuItens");
+
+            MenuItens.style.maxHeight = "0px";
+
+            function menutoogle(){
+                if(MenuItens.maxHeight == "0px")
+                {
+                    MenuItens.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItens.style.maxHeight = "0px"
+
+                }
+            }
+         </script>
+
+
+<!-----------produtos galeria------>
+     <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+         SmallImg[0].onclick = function()
+         {
+            ProductImg.src = SmallImg[0].src;
+         }
+         SmallImg[1].onclick = function()
+         {
+            ProductImg.src = SmallImg[1].src;
+         }
+         SmallImg[2].onclick = function()
+         {
+            ProductImg.src = SmallImg[2].src;     
+         }
+         SmallImg[3].onclick = function()
+         {
+            ProductImg.src = SmallImg[3].src;
+         }
+     </script>
+
+
+
+    </body>
+</html>
