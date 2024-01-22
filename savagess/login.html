@@ -16,19 +16,20 @@
         <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="roupa/savagae soul top2.png" width="250px">
+                <img src="roupa/logo roupa qualidade.png" width="250px">
             </div>
             <nav>
-                <ul>
-                    <li><a href="" class="btn"><img src="">Inicio</a></li>
-                    <li><a href="" class="btn"><img src="">Produtos</a></li>
+                <ul id="MenuItens">
+                    <li><a href="index.html" class="btn"><img src="">Inicio</a></li>
+                    <li><a href="produtos.html" class="btn"><img src="">Produtos</a></li>
                     <li><a href="" class="btn"><img src="">NOVIDADES</a></li>
                     <li><a href="" class="btn"><img src="">Unisexo</a></li>
                 </ul>
             </nav>
             <a href="" class="btn"><img src="roupa/search.png" alt=""></a>
-            <a href="" class="btn"><img src="roupa/user.png" alt=""></a>
-            <a href="" class="btn"><img src="roupa/shopping-cart.png" alt=""></a>
+            <a href="login.html" class="btn"><img src="roupa/user.png" alt=""></a>
+
+            <a href="cart.html" class="btn"><img src="roupa/shopping-cart.png" alt=""></a>
         </div>
         </div>
 
@@ -38,34 +39,30 @@
     <div class="container">
         <div class="row">
             <div class="col-2">
-                <img src="roupa/logo login.png" width="200px">
+                <img src="roupa/logo loginnova.png" width="100%">
             </div>
             <div class="col-2">
                 <div class="form-container">
                     <div class="form-btn">
-                        <span>Login</span>
-                        <span>Registrar</span>
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Registrar</span>
+                        <hr id="Indicator">
                     </div>
 
-                    <form>
+                    <form id="LoginForm">
                         <input type="text" placeholder="Nome">
-                        <input type="password" placeholder="password">
-                        <input type="submit" placeholder="password">
+                        <input type="password" placeholder="Palavra Passe">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Esqueci a senha</a>
                     </form>
 
-                    <form id="Loginform">
-                        <input type="text" placeholder="Email">
-                        <input type="password" placeholder="password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Esqueceu a senha</a>
-                    </form>
-                    
-                    <form id="Regform">
+                    <form id="RegForm">
                         <input type="text" placeholder="Nome">
                         <input type="email" placeholder="Email">
-                        <input type="password" placeholder="password">
+                        <input type="password" placeholder="Palavra Passe">
                         <button type="submit" class="btn">Registrar</button>
-                     </form>
+                    </form>
+
 
                 </div>
             </div>
@@ -78,14 +75,13 @@
 
 <!------------footer------>
 
-        <div class="footer1">
+        <div class="footer">
             <div class="container">
                 <div class="row">
                     <div class="footer-col-1">
-                        <h31>Baixa o nosso APP</h31>
-                        <p6>Para Android e Windows</p6>
-                        <br>
-                        <p16>*Futuramente para Apple*</p16>
+                        <h3>Baixa o nosso APP</h3>
+                        <p>Para Android e Windows</p>
+                        <p1>*Futuramente para Apple*</p1>
                            <div class="app-logo">
                            </div>
                     </div>
@@ -93,7 +89,7 @@
                         
                 </div>
                     <div class="footer-col-3">
-                        <h31>Redes Socias</h31>
+                        <h3>Redes Socias</h3>
                         <ul>
                             <img src="roupa/youtube.png" width="30px">
                             <img src="roupa/instagram.png" width="25px">
@@ -104,7 +100,7 @@
                  </div>
             </div>
             <hr>
-            <p67 class="copyright">© 2024 SAVAGE SOUL All Rights Reserved</p67>
+            <p class="copyright">© 2024 SAVAGE SOUL All Rights Reserved</p>
         </div>
 
         <!---------menu------>
@@ -125,30 +121,37 @@
                 }
             }
          </script>
+    <!-------------js for toggle form-------->
+      
+         <script>
 
-<!-----toggle form----->
-     <script>
+            var LoginForm = document.getElementById("LoginForm");
+            var RegForm = document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
 
-        var loginform = document.getElementById("Loginform");
-        var RegForm = document.getElementById("RegForm");
+            function register(){
 
-            function Registrar(){
                 RegForm.style.transform = "translateX(0px)";
-                loginform.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+
+
             }
 
-            function Login(){
+            function login(){
+
                 RegForm.style.transform = "translateX(300px)";
-                loginform.style.transform = "translateX(300px)";
-            }   
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+
+            }
 
 
 
-     </script>
 
 
 
-
+         </script>
 
 
 
