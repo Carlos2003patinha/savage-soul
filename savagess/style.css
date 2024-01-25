@@ -267,7 +267,6 @@ p{
     color: #bfa467;
 }
 
-
 nav{
     text-align: left;
 }
@@ -470,8 +469,54 @@ form a{
     cursor: pointer;
 }
 
-
-
+/*----------Barra pesquisa--------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #808080;
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+#seacrh-container{
+    margin: 1em 0;
+}
+#serach-container input{
+    background-color: #bfa467;
+    width: 40%;
+    border-bottom: 2px solid #808080;
+    padding: 1em 0.3em;
+}
+#search-container input:focus{
+    border-bottom-color: #bfa467;
+}
+#search-container button{
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #bfa467;
+    color: white;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+.button-value{
+    border: 2px solid #bfa467;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.active{
+    background-color: #bfa467;
+    color: white;
+}
 
 
 

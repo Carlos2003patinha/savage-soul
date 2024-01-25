@@ -4,7 +4,7 @@
     
 
         <meta charset="UTF-8">
-        <title>TRAPSTAR SAVAGE SOUL</title>
+        <title>casaco1 SAVAGE SOUL</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,17 +34,21 @@
         </div>
         <a href="index.html" class="btn">Voltar</a>
 
+
         <!------produtos------->
 
         <div class="small-container">
             <div class="row">
                 <div class="col-2">
-                    <img src="roupa/sweat_branca-removebg-preview.png" width="100%">
+                    <img src="roupa/casaco.png" width="100%" id="product-img">
+
+            
                 </div>
                 <div class="col-2">
-                   <p>Início / Sweat </p>
-                   <h1>Sweat SAVAGE X TRAPSTAR</h1>
-                   <h2>69.99€ 1̶5̶0̶.̶0̶0̶€</h2>
+                   <p>Início / Casaco </p>
+                   <h1>Casaco SAVAGE SOUL</h1>
+
+                   <h2>29.99€</h2>
                    <select>
                       <option>Select size</option>
                       <option>S</option>
@@ -52,13 +56,13 @@
                       <option>L</option>
                       <option>XL</option>
                       <option>XXL</option>
-                      <option>XXXL</option>
+                    
 
                    </select>
                     <input type="number" value="1">
                     <a href="cart.html" class="btn">Adicionar ao carrinho</a>
-                    <h32>Detalhes do Produto:</h32><br><h32>Vamos ter drip?</h32>
-                    <br><h32>Sweat SAVAGE 1/5<h32></h32><br><p4>Apenas 5 unidades</p4>
+                    <h32>Detalhes do Produto:</h32><br><h32>Confortável e aconchegante para este frio</h32>
+                    <br><h32>1º da Edição de Casacos<h32></h32><br><p4>SAVAGE SOUL</p4>
                 </div>
             </div>
         </div>
@@ -158,11 +162,32 @@
                 }
             }
          </script>
+        
+<!--------galeria------>
+
+<script>
+
+    var productimg = document.getElementById("ProductImg");
+    var SmallImg = Document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+</script>
+
+
+
 
 
 <!-----------produtos galeria------>
 <script>
-    var ProductImg = document.getElementById("ProductImg");
+    var ProductImg = document.getElementById("product-img");
     var SmallImg = document.getElementsByClassName("small-img");
 
      SmallImg[0].onclick = function()
